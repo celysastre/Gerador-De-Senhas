@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  /* Header */
+  header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estrutura geral */
+  main {
+    display: flex;
+    height: calc(100vh - 100px);
+  }
+  
+  #register-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  #register-banner {
+    flex: 1;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  /* Camada sobre imagem para contraste */
+  #banner-layer {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  #banner-layer h1 {
+    font-size: 2rem;
+    color: #6f42c1;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  #banner-layer p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form-control {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #333;
+  }
+  
+  .form-control input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  /* Botão de cadastro */
+  input[type="submit"] {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #6f42c1;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #5936a1;
+  }
+  
+  /* Geração de senha */
+  #generate-password {
+    color: #6f42c1;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  #generated-password {
+    display: none;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  #generated-password h4 {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    #register-banner {
+      height: 250px;
+      background-position: top center;
+    }
+  
+    #banner-layer {
+      margin-top: 1rem;
+      padding: 1.5rem;
+    }
+  }
+  
